@@ -39,66 +39,404 @@
 </head>
 <body class="">
   <header>
-	<div class="in">
-		<div class="flex inherit">
-			<div class="in__logo">
-				<a href="/" class="in__logo__img"><img src="/assets/img/common/logo-v2.svg" alt="Lakeel"></a>
-				<span>DX実現のための情報サイト</span>
-			</div>
-			<nav class="in__nav pc-only">
-				<ul class="flex">
-					<li><a href="#">セミナー情報</a></li>
-					<li><a href="#">ホワイトペーパー</a></li>
-					<li><a href="#">資料請求</a></li>
-					<li><a href="#">お問合せ・ご相談</a></li>
-				</ul>
-			</nav>
-			<div id="nav-toggle" class="sp-only">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-		</div>
-	</div>
-	<div class="nav-list pc-only">
-		<ul class="flex">
-			<li><a href="#">TOP</a></li>
-			<li><a href="#">製品紹介</a></li>
-			<li><a href="#">課題別ソリューション</a></li>
-			<li><a href="#">部門別課題</a></li>
-			<li><a href="#">実績・事例</a></li>
-			<li><a href="#">LaKeelが選ばれる理由</a></li>
-			<li><a href="#">お役立ち記事</a></li>
-			<li><a href="#">よくあるご質問</a></li>
-		</ul>
-	</div>
-	<div id="gloval-nav">
-		<ul class="list">
-			<li><a href="#">TOP</a></li>
-			<li><a href="#">製品紹介</a></li>
-			<li><a href="#">課題別ソリューション</a></li>
-			<li><a href="#">部門別課題</a></li>
-			<li><a href="#">実績・事例</a></li>
-			<li><a href="#">LaKeelが選ばれる理由</a></li>
-			<li><a href="#">お役立ち記事</a></li>
-			<li><a href="#">よくあるご質問</a></li>
-		</ul>
-		<ul class="aside">
-			<li><a href="#">セミナー情報</a></li>
-			<li><a href="#">ホワイトペーパー</a></li>
-			<li><a href="#">資料請求</a></li>
-			<li><a href="#">お問合せ・ご相談</a></li>
-		</ul>
-	</div>
+  <div class="in">
+    <aside class="flex aiC inherit">
+      <div class="in__logo"><a href="/"><img src="/assets/img/common/logo.svg" alt="駿河精機株式会社" loading="lazy" decoding="async" width="145" height="56"></a></div>
+      <nav class="in__nav hpc-only">
+        <ul class="flex jcE aiC">
+          <li class="core"><a href="tel:0120789446" class="tel">0120-789-446</a>　平日9:00~18:00（土日祝は除く）</li>
+          <li class="in__nav--list"><a href="/catalog/" class="doc">製品資料</a></li>
+          <li class="in__nav--list"><a href="/estimate/" class="estimate">お見積</a></li>
+          <li class="in__nav--list"><a href="/contact/" class="mail">お問合せ・ご相談</a></li>
+          <li class="in__nav--list parent">
+            <a href="#" class="pc disabled"><span>デモ機貸出</span></a>
+            <ul class="pull">
+              <li><a href="/demo_m/">機器のみ</a></li>
+              <li><a href="/demo_v/">デモンストレーション（訪問）</a></li>
+              <li><a href="/demo_w/">デモンストレーション（ワーク送付）</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div id="nav-toggle" class="hsp-only">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </aside>
+  </div>
+  <nav class="nav-list hpc-only">
+    <ul class="flex nav-list-box">
+      <li><a href="/product/" class="link">製品の特長</a></li>
+      <li><a href="/cost/" class="link">装置制作のコスト削減をしたい</a></li>
+      <li><a href="/accuracy/" class="link">より精度の高い計測がしたい</a></li>
+      <li><a href="/strength/" class="link">選ばれる理由</a></li>
+      <li><a href="/case/" class="link">導入事例</a></li>
+      <li class="parent">
+        <a href="#" class="arrow disabled">お役立ち情報</a>
+        <div class="mega flex pull">
+          <div class="mega__parent">お役立ち情報</div>
+          <div class="mega__box flex">
+            <div class="mega__box--list">
+              <a href="/whitepaper/" class="ttl">お役立ち資料</a>
+            </div>
+            <div class="mega__box--list">
+              <a href="/column/" class="ttl">お役立ちコラム</a>
+            </div>
+            <div class="mega__box--list">
+              <a href="/news/" class="ttl">お知らせ</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li><a href="/company/" class="link">会社概要</a></li>
+    </ul>
+  </nav>
+
+  <div id="gloval-nav" class="hsp-only">
+    <ul class="list">
+      <li><a href="/product/">製品の特長</a></li>
+      <li><a href="/cost/">装置制作のコスト削減をしたい</a></li>
+      <li><a href="/accuracy/">より精度の高い計測がしたい</a></li>
+      <li><a href="/strength/">選ばれる理由</a></li>
+      <li><a href="/case/">導入事例</a></li>
+      <li><a href="#" class="disabled">お役立ち情報</a></li>
+      <li class="child"><a href="/whitepaper/">お役立ち資料</a></li>
+      <li class="child"><a href="/column/">お役立ちコラム</a></li>
+      <li class="child"><a href="/news/">お知らせ</a></li>
+      <li><a href="/company/">会社概要</a></li>
+    </ul>
+    <ul class="aside">
+      <li><a href="tel:0120789446" class="tel">0120-789-446</a><br>平日9:00~18:00（土日祝は除く）</li>
+      <li><a href="/catalog/" class="more small doc">製品資料</a></li>
+      <li><a href="/estimate/" class="more small estimate">お見積</a></li>
+      <li><a href="/contact/" class="more small mail">お問合せ・ご相談</a></li>
+      <li><a href="/demo_m/" class="more small pc">機器のみ</a></li>
+      <li><a href="/demo_v/" class="more small pc">デモンストレーション（訪問）</a></li>
+      <li><a href="/demo_w/" class="more small pc">デモンストレーション（ワーク送付）</a></li>
+    </ul>
+  </div>
 </header>
   
 
-<main>
+<main class="top">
+
+  <section class="hero core">
+    <div class="containers flex aiC">
+      <div class="hero__box">
+        <div class="hero__box--sub">精密さを求める部品やデバイスの検査・角度測定に</div>
+        <h1 class="ttl-primary">駿河精機の光センサ</h1>
+        <div class="hero__box--lead">低コスト・省スペース・短時間にて<br>高精度な測定を実現します。</div>
+        <div class="ctabtn">
+          <div class="balloon"><span class="balloon__txt">製品の特長や料金が3分で分かる！</span></div>
+          <a href="/catalog/" class="more thumb big bgY">製品資料ダウンロード</a>
+        </div>
+      </div>
+      <figure class="hero__img"><img src="/assets/img/top/img-hero.png" alt="" loading="lazy" decoding="async" width="482" height="482"></figure>
+    </div>
+  </section>
+
+  <section class="sec-case">
+    <div class="containers-full">
+      <h2 class="ttl-secondary">駿河精機の製品は多くの企業様に<br class="sp-only">選ばれています</h2>
+      <ul id="loop-slick" class="slider">
+        <li><img src="/assets/img/slick/img-loop01.png" alt="" loading="lazy" decoding="async" width="200" height="100"></li>
+        <li><img src="/assets/img/slick/img-loop01.png" alt="" loading="lazy" decoding="async" width="200" height="100"></li>
+        <li><img src="/assets/img/slick/img-loop01.png" alt="" loading="lazy" decoding="async" width="200" height="100"></li>
+        <li><img src="/assets/img/slick/img-loop01.png" alt="" loading="lazy" decoding="async" width="200" height="100"></li>
+        <li><img src="/assets/img/slick/img-loop01.png" alt="" loading="lazy" decoding="async" width="200" height="100"></li>
+        <li><img src="/assets/img/slick/img-loop01.png" alt="" loading="lazy" decoding="async" width="200" height="100"></li>
+        <li><img src="/assets/img/slick/img-loop01.png" alt="" loading="lazy" decoding="async" width="200" height="100"></li>
+        <li><img src="/assets/img/slick/img-loop01.png" alt="" loading="lazy" decoding="async" width="200" height="100"></li>
+        <li><img src="/assets/img/slick/img-loop01.png" alt="" loading="lazy" decoding="async" width="200" height="100"></li>
+      </ul>
+      <a href="/case/" class="more bgW">導入事例を見る</a>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="containers">
+      <h2 class="ttl-secondary cW">レーザオートコリメータ<br class="sp-only">「Smart LAC」とは</h2>
+      <div class="lead cW">非接触レーザオートコリメータ方式採用し、１台のセンサでワークの傾きを高精度にリアルタイム測定</div>
+      <ul class="flex gap30 card">
+        <li class="card__box">
+          <h3 class="card__box--ttl">非接触で角度が測定できる</h3>
+          <figure class="card__box--img"><img src="/assets/img/top/img-about01.jpg" alt="非接触で角度が測定できる" loading="lazy" decoding="async" width="287" height="161"></figure>
+          <ul class="card__box--txt">
+            <li>測定物に損傷を与えない</li>
+            <li>センサ1台で傾きがわかるので、省空間・省価格・省エネ</li>
+          </ul>
+        </li>
+        <li class="card__box">
+          <h3 class="card__box--ttl">作動距離によらず測定できる</h3>
+          <figure class="card__box--img"><img src="/assets/img/top/img-about02.jpg" alt="作動距離によらず測定できる" loading="lazy" decoding="async" width="287" height="161"></figure>
+          <ul class="card__box--txt">
+            <li>繰り返し再現性0.0003度 （Ave.）（5µrad）</li>
+            <li>作動距離によらず測定ができるので、レイアウト自由度が高い</li>
+          </ul>
+        </li>
+        <li class="card__box">
+          <h3 class="card__box--ttl">瞬時に測定できる</h3>
+          <figure class="card__box--img"><img src="/assets/img/top/img-about03.jpg" alt="瞬時に測定できる" loading="lazy" decoding="async" width="287" height="161"></figure>
+          <ul class="card__box--txt">
+            <li>高速・高精度もラインナップ<br>　高速測定　　　500kHz<br>　測定時間　2μs(500kHz)</li>
+          </ul>
+        </li>
+      </ul>
+      <a href="/product/" class="more">製品詳細を見る</a>
+    </div>
+  </section>
+
+  <section class="needs">
+    <div class="containers">
+      <h2 class="ttl-secondary">以下のようなニーズをお持ちの<br class="sp-only">企業様に活用されています</h2>
+      <div class="flex jcC gap30 card">
+        <a herf="/cost/" class="card__box">
+          <h3 class="card__box--ttl">装置制作のコスト削減をしたい</h3>
+          <figure class="card__box--img"><img src="/assets/img/top/img-needs01.jpg" alt="装置制作のコスト削減をしたい" loading="lazy" decoding="async" width="480" height="270"></figure>
+        </a>
+        <a herf="/accuracy/" class="card__box">
+          <h3 class="card__box--ttl">より精度の高い計測がしたい</h3>
+          <figure class="card__box--img"><img src="/assets/img/top/img-needs02.jpg" alt="より精度の高い計測がしたい" loading="lazy" decoding="async" width="480" height="270"></figure>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="useful-wp">
+    <div class="containers">
+      <h2 class="ttl-secondary cW">お役立ち資料</h2>
+      <div class="flex jcC gap30">
+        <a href="#" class="card">
+          <figure class="card__img"><img src="/assets/img/common/img-useful-wp.jpg" alt="" loading="lazy" decoding="async" width="190" height="131"></figure>
+          <summary class="card__box">
+            <div class="card__box--ttl">資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイト</div>
+            <div class="more bgY small">資料ダウンロード</div>
+          </summary>
+        </a>
+        <a href="#" class="card">
+          <figure class="card__img"><img src="/assets/img/common/img-useful-wp.jpg" alt="" loading="lazy" decoding="async" width="190" height="131"></figure>
+          <summary class="card__box">
+            <div class="card__box--ttl">資料タイトルが入ります。資料タイトルが入ります。資料タイト</div>
+            <div class="more bgY small">資料ダウンロード</div>
+          </summary>
+        </a>
+        <a href="#" class="card">
+          <figure class="card__img"><img src="/assets/img/common/img-useful-wp.jpg" alt="" loading="lazy" decoding="async" width="190" height="131"></figure>
+          <summary class="card__box">
+            <div class="card__box--ttl">資料タイトルが入ります。資料タイトルが入ります。資料タイト</div>
+            <div class="more bgY small">資料ダウンロード</div>
+          </summary>
+        </a>
+      </div>
+      <a href="/whitepaper/" class="more">お役立ち資料一覧を見る</a>
+    </div>
+  </section>
+
+  <section class="sec-column">
+    <div class="containers">
+      <h2 class="ttl-secondary cW">製造業向けお役立ちコラム</h2>
+      <div class="flex jcC gap30 card">
+        <a href="#" class="card__wrap">
+          <figure class="card__wrap--img"><img src="/assets/img/common/img-sec-column01.png" alt="" loading="lazy" decoding="async" width="347" height="170"></figure>
+          <summary class="card__box">
+            <div><span class="cat">カテゴリ名</span></div>
+            <h3 class="card__box--ttl">コラムタイトルが入りますコラムタイトルが入りますコラムタイトルが入りますコラムタイトルが入りますコラムタイトルが入りますコラムタイトルが入ります</h3>
+            <div><span class="time">2023.7.18</span></div>
+          </summary>
+        </a>
+        <a href="#" class="card__wrap">
+          <figure class="card__wrap--img"><img src="/assets/img/common/img-sec-column01.png" alt="" loading="lazy" decoding="async" width="347" height="170"></figure>
+          <summary class="card__box">
+            <div><span class="cat">カテゴリ名</span></div>
+            <h3 class="card__box--ttl">コラムタイトルが入りますコラムタイトルが入りますコラムタイトルが入ります</h3>
+            <div><span class="time">2023.7.18</span></div>
+          </summary>
+        </a>
+        <a href="#" class="card__wrap">
+          <figure class="card__wrap--img"><img src="/assets/img/common/img-sec-column01.png" alt="" loading="lazy" decoding="async" width="347" height="170"></figure>
+          <summary class="card__box">
+            <div><span class="cat">カテゴリ名</span></div>
+            <h3 class="card__box--ttl">コラムタイトルが入りますコラムタイトルが入りますコラムタイトルが入ります</h3>
+            <div><span class="time">2023.7.18</span></div>
+          </summary>
+        </a>
+      </div>
+      <a href="/column/" class="more">お役立ちコラム一覧を見る</a>
+    </div>
+  </section>
+
+  <section class="element">
+    <div class="containers">
+      <h2 class="ttl-secondary rack"><small>選ばれる理由</small>駿河精機の製品は、バリエーションの豊富さ、互換性の高さと<br>確実短納期を実現することにより、<br class="sp-only">多くの企業様に選ばれています。</h2>
+      <ul class="flex gap30 item">
+        <li class="item__box">
+          <div class="item__box--num core">1</div>
+          <div class="item__box--ttl">製品バリエーションの豊富さ</div>
+          <figure class="item__box--img"><img src="/assets/img/top/img-element01.jpg" alt="製品バリエーションの豊富さ"></figure>
+        </li>
+        <li class="item__box">
+          <div class="item__box--num core">2</div>
+          <div class="item__box--ttl">製品の互換性</div>
+          <figure class="item__box--img"><img src="/assets/img/top/img-element02.jpg" alt="製品の互換性"></figure>
+        </li>
+        <li class="item__box">
+          <div class="item__box--num core">3</div>
+          <div class="item__box--ttl">テクノロジーと安定性</div>
+          <figure class="item__box--img"><img src="/assets/img/top/img-element03.jpg" alt="テクノロジーと安定性"></figure>
+        </li>
+      </ul>
+      <a href="/strength/" class="more bgW">詳しくはこちら</a>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="containers">
+      <h2 class="ttl-secondary">会社情報</h2>
+      <div class="flex gap50 aiC">
+        <figure class="info__img"><img src="/assets/img/top/img-info.jpg" alt="会社情報" loading="lazy" decoding="async" width="522" height="294"></figure>
+        <div class="info__box">
+          <h3 class="info__box--ttl">駿河精機は1964年の創業より、光学機器市場で競争力の高い製品を提供し続けています。<br>急速に発展するスマートフォン・タブレットなどのモバイル機器や、光通信、半導体、車載用センサ部門等において、駿河精機のテクノロジーが欠かせない存在となっています。 </h3>
+          <a href="/company/" class="more bgW">詳しくはこちら</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-news">
+    <div class="containers">
+      <h2 class="ttl-secondary">お知らせ</h2>
+
+        <a href="#" class="sec-news__box">
+          <dl class="flex aiC gap30 sec-news__box--item">
+            <dt class="flex aiC gap20 sp-fS">
+              <time class="time">2022.9.20</time>
+              <span class="cat">カテゴリ</span>
+            </dt>
+            <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。</dd>
+          </dl>
+        </a>
+        <a href="#" class="sec-news__box">
+          <dl class="flex aiC gap30 sec-news__box--item">
+            <dt class="flex aiC gap20 sp-fS">
+              <time class="time">2022.9.20</time>
+              <span class="cat">カテゴリ</span>
+            </dt>
+            <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。</dd>
+          </dl>
+        </a>
+        <a href="#" class="sec-news__box">
+          <dl class="flex aiC gap30 sec-news__box--item">
+            <dt class="flex aiC gap20 sp-fS">
+              <time class="time">2022.9.20</time>
+              <span class="cat">カテゴリ</span>
+            </dt>
+            <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。</dd>
+          </dl>
+        </a>
+        <a href="#" class="sec-news__box">
+          <dl class="flex aiC gap30 sec-news__box--item">
+            <dt class="flex aiC gap20 sp-fS">
+              <time class="time">2022.9.20</time>
+              <span class="cat">カテゴリ</span>
+            </dt>
+            <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。</dd>
+          </dl>
+        </a>
+        <a href="#" class="sec-news__box">
+          <dl class="flex aiC gap30 sec-news__box--item">
+            <dt class="flex aiC gap20 sp-fS">
+              <time class="time">2022.9.20</time>
+              <span class="cat">カテゴリ</span>
+            </dt>
+            <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。</dd>
+          </dl>
+        </a>
+      
+      <a href="/news/" class="more bgW">お知らせ一覧を見る</a>
+    </div>
+  </section>
+
+  <section class="inquiry">
+    <div class="containers">
+      <div class="inquiry__wrap">
+        <h2 class="ttl-secondary non">レーザオートコリメータ<br class="sp-only">「Smart LAC」に関する<br>お問合せやご相談はお気軽に<br class="sp-only">ご連絡ください。</h2>
+        <a href="/contact/" class="more big bgY">お問合せ・ご相談</a>
+        <div class="flex jcC gap20 aiC inquiry__tel">
+          <a href="tel:0120789446" class="tel">0120-789-446</a>
+          <span>平日 9:00~18:00（土日祝は除く）</span>
+        </div>
+        <summary class="flex aiC inquiry__box">
+          <div class="inquiry__box--txt">製品資料やお役立ち資料を<br class="sp-only">ご希望の方はこちら</div>
+          <div class="flex gap10 inquiry__box--btn">
+            <a href="/catalog/" class="more tiny"><span>製品資料</span></a>
+            <a href="/whitepaper/" class="more tiny"><span>お役立ち資料</span></a>
+          </div>
+        </summary>
+      </div>
+    </div>
+  </section>
 
 </main>
 
 <footer>
-	
+  <div class="containers nav">
+    <nav class="flex gap">
+      <div class="nav__box">
+        <div class="nav__box--ttl">製品について</div>
+        <ul class="nav__box--list">
+          <li><a href="/product/">製品の特長</a></li>
+          <li><a href="/strength/">選ばれる理由</a></li>
+          <li><a href="/case/">導入事例</a></li>
+        </ul>
+      </div>
+      <div class="nav__box">
+        <div class="nav__box--ttl">お役立ち情報</div>
+        <ul class="nav__box--list">
+          <li><a href="/whitepaper/">お役立ち資料</a></li>
+          <li><a href="/column/">お役立ちコラム</a></li>
+          <li><a href="/news/">お知らせ</a></li>
+        </ul>
+      </div>
+      <div class="nav__box">
+        <div class="nav__box--ttl">ニーズ・課題から探す</div>
+        <ul class="nav__box--list">
+          <li><a href="/cost/">装置制作のコスト削減をしたい</a></li>
+          <li><a href="/accuracy/">より精度の高い計測がしたい</a></li>
+        </ul>
+      </div>
+      <div class="nav__box">
+        <div class="nav__box--ttl">お問合せ</div>
+        <ul class="nav__box--list">
+          <li><a href="/catalog/">製品資料ダウンロード</a></li>
+          <li><a href="/contact/">お問合せ・ご相談</a></li>
+          <li><a href="/estimate/">お見積</a></li>
+        </ul>
+      </div>
+      <div class="nav__box">
+        <div class="nav__box--ttl">デモ機貸出</div>
+        <ul class="nav__box--list">
+          <li><a href="/demo_m/">機器のみ</a></li>
+          <li><a href="/demo_v/">デモンストレーション（訪問）</a></li>
+          <li><a href="/demo_w/">デモンストレーション（ワーク送付）</a></li>
+        </ul>
+      </div>
+      <div class="nav__box">
+        <div class="nav__box--ttl">その他</div>
+        <ul class="flex nav__box--list">
+          <li><a href="">「該当/非該当判定書」作成依頼</a></li>
+          <li><a href="">キャンセルポリシー(PDF)</a></li>
+          <li><a href="">個人情報保護方針</a></li>
+          <li><a href="">利用規約</a></li>
+          <li><a href="">輸出管理規制対応</a></li>
+          <li><a href="">企業情報</a></li>
+          <li><a href="">保証規定</a></li>
+          <li><a href="">環境・品質への取組み</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <aside class="aside">Copyright © SURUGA SEIKI CO., LTD. All rights reserved</aside>
 </footer>
   <script src="/assets/js/all.min.js"></script>
     

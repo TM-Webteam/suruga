@@ -31,3 +31,16 @@
   }
 }
 
+.hsp-only {
+  @media #{$h-pc} {
+    display: none !important;
+  }
+}
+
+
+.hpc-only {
+  @media #{$h-sp} {
+    display: none !important;
+  }
+}
+

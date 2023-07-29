@@ -3,3 +3,309 @@
   TOP
   ----------------
 */
+
+.top {
+
+  // hero01 右側にimg
+  .hero {
+    background: url("../img/top/bg-hero.webp") 50% / cover no-repeat;
+    height: 520px;
+    color: #fff;
+    @media #{$sp} {
+      background: url("../img/top/bg-hero-sp.webp") 50% / cover no-repeat;
+      height: auto;
+    }
+    &__box {
+      width: 50%;
+      @media #{$sp} {
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      &--sub {
+        display: inline-block;
+        font-size: 22px;
+        font-weight: bold;
+        padding: 0 20px 5px 0;
+        margin-bottom: 20px;
+        background: url("../img/top/ttl-line.svg") 0 100% no-repeat;
+        @media #{$sp} {
+          font-size: 14px;
+          margin-bottom: 15px;
+        }
+      }
+      &--lead {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 60px;
+        @media #{$sp} {
+          font-size: 14px;
+          margin-bottom: 40px;
+        }
+      }
+      .ctabtn {
+        .more.big {
+          width: 380px;
+          @media #{$sp} {
+            width: 85%;
+          }
+        }
+      }
+    }
+    &__img {
+      width: 50%;
+      @media #{$sp} {
+        width: 100%;
+      }
+      img {
+        max-width: 90%;
+      }
+    }
+    
+  }
+
+  .about {
+    background: url("../img/top/bg-about.webp") 50% 0 / cover no-repeat;
+    .card {
+      margin-bottom: 60px;
+      @media #{$sp} {
+        margin-bottom: 30px;
+      }
+      &__box {
+        // display: block;
+        width: calc(100% / 3 - 20px);
+        padding: 30px;
+        background: #fff;
+        border-radius: 20px;
+        @media #{$sp} {
+          width: 100%;
+          padding: 15px;
+          &:not(:last-child) {
+            margin-bottom: 15px;
+          }
+        }
+        &--ttl {
+          font-size: 20px;
+          font-weight: bold;
+          text-align: center;
+          margin-bottom: 30px;
+          @media #{$sp} {
+            font-size: 16px;
+            margin-bottom: 15px;
+          }
+        }
+        &--img {
+          margin-bottom: 30px;
+          @media #{$sp} {
+            margin-bottom: 15px;
+          }
+        }
+        &--txt {
+          padding-left: 1.5em;
+          li {
+            list-style: circle;
+            &::marker {
+              color: #004098;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .needs {
+    .card {
+      width: 90%;
+      margin: 0 auto;
+      &__box {
+        display: block;
+        text-align: center;
+        width: calc(100% / 2 - 15px);
+        @media #{$sp} {
+          padding: 15px;
+          width: 100%;
+        }
+        &--ttl {
+          display: inline-block;
+          padding-right: 30px;
+          font-size: 20px;
+          font-weight: bold;
+          margin-bottom: 20px;
+          color: #004098;
+          position: relative;
+          @media #{$sp} {
+            padding-right: 20px;
+            font-size: 16px;
+            margin-bottom: 15px;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 16px;
+            height: 17px;
+            background: url("../img/common/arrow-r.svg") 50% / contain no-repeat;
+            transition: all .3s;
+          }
+        }
+        &--img {
+          overflow: hidden;
+          img {
+            transition: all .3s;
+          }
+        }
+        &:hover {
+          opacity: 1;
+          .card__box--ttl::before {
+            right: -10px;
+          }
+          .card__box--img img {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+
+  .useful-wp {
+    background: url("../img/common/bg-useful-wp.svg") 100% 0 no-repeat #025FAE;
+    .card {
+      display: block;
+      width: calc(100% / 3 - 20px);
+      @media #{$sp} {
+        width: 100%;
+      }
+      &__img {
+        background: #F6F6F6;
+        text-align: center;
+        padding: 30px;
+        border-radius: 20px 20px 0 0;
+        @media #{$sp} {
+          padding: 15px;
+        }
+        img {
+          width: auto;
+          height: 130px;
+          transition: all .3s;
+        }
+      }
+      &__box {
+        background: #fff;
+        padding: 30px;
+        border-radius: 0 0 20px 20px;
+        @media #{$sp} {
+          padding: 15px;
+        }
+        &--ttl {
+          font-weight: bold;
+          margin-bottom: 20px;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          @media #{$sp} {
+            margin-bottom: 15px;
+          }
+        }
+      }
+      &:hover {
+        opacity: 1;
+        .card__img img {
+          transform:scale(1.1);
+        }
+      }
+    }
+    .flex.gap30 {
+      margin-bottom: 70px;
+      @media #{$sp} {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .sec-column {
+    background: url("../img/common/bg-sec-column.svg") 0 0 no-repeat #153159;
+    .card {
+      margin-bottom: 70px;
+      @media #{$sp} {
+        margin-bottom: 30px;
+      }
+      &__wrap {
+        display: block;
+        width: calc(100% / 3 - 20px);
+        background: #fff;
+        border-radius: 22px 22px 20px 20px;
+        @media #{$sp} {
+          width: 100%;
+          &:not(:last-child) {
+            margin-bottom: 15px;
+          }
+        }
+        &--img {
+          border-radius: 20px 20px 0 0;
+          overflow: hidden;
+          img {
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            transition: all .3s;
+          }
+        }
+        &:hover {
+          opacity: 1;
+          .card__wrap--img img {
+            transform: scale(1.1);
+          }
+        }
+      }
+      &__box {
+        padding: 25px;
+        @media #{$sp} {
+          padding: 15px;
+        }
+        .cat {
+          margin-bottom: 5px;
+        }
+        &--ttl {
+          font-weight: bold;
+          margin-bottom: 10px;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+        }
+      }
+    }
+  }
+
+  .info {
+    background: linear-gradient(to right, #D4D4D4, #F3F3F3);
+    &__box {
+      width: calc(100% - 48% - 50px);
+      @media #{$sp} {
+        width: 100%;
+      }
+      &--ttl {
+        margin-bottom: 30px;
+        @media #{$sp} {
+          margin-bottom: 15px;
+        }
+      }
+      .more {
+        margin: 0;
+        @media #{$sp} {
+          margin: 0 auto;
+        }
+      }
+    }
+    &__img {
+      width: 48%;
+      @media #{$sp} {
+        width: 100%;
+      }
+    }
+  }
+
+}

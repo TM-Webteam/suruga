@@ -4,3 +4,185 @@
   ----------------
 */
 
+.sec-case {
+  .containers-full {
+    @media #{$sp} {
+      padding: 35px 0;
+    }
+  }
+  .slider {
+    margin-bottom: 70px;
+    @media #{$sp} {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+// 何かの要素
+.element {
+  .item {
+    margin-bottom: 70px;
+    @media #{$sp} {
+      margin-bottom: 30px;
+    }
+    &__box {
+      text-align: center;
+      width: calc(100% / 3 - 20px);
+      @media #{$sp} {
+        width: 100%;
+      }
+      &--num {
+        background: #025FAE;
+        color: #FFCC00;
+        font-size: 32px;
+        font-weight: bold;
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        margin: 0 auto 20px;
+        font-family: din-2014, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        @media #{$sp} {
+          font-size: 20px;
+          width: 40px;
+          height: 40px;
+          margin: 0 auto 15px;
+        }
+      }
+      &--ttl {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.5;
+        margin-bottom: 30px;
+        @media #{$sp} {
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
+      }
+      &--img {
+
+      }
+      &:not(:last-child) {
+        @media #{$sp} {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+// ニュース　※CMS対応
+.sec-news {
+  .containers {
+    max-width: 920px;
+  }
+  &__box {
+    display: block;
+    padding: 30px 0;
+    border-bottom: 1px solid #ddd;
+    @media #{$sp} {
+      width: 100%;
+      padding: 15px 0;
+    }
+    &--item {
+      dt {
+        width: 210px;
+        @media #{$sp} {
+          width: 100%;
+        }
+        .cat {
+          font-size: 12px;
+          font-weight: 500;
+          background: #fff;
+          color: #000;
+          border: 1px solid #000;
+          border-radius: 3px;
+          padding: 5px;
+          width: 115px;
+        }
+      }
+      dd {
+        width: calc(100% - 210px - 50px);
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        @media #{$sp} {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .more {
+    margin-top: 70px;
+    @media #{$sp} {
+      margin-top: 30px;
+    }
+  }
+}
+
+// お問合わせ
+.inquiry {
+  background: url("../img/common/bg-inquiry.webp") 50% / cover no-repeat;
+  &__wrap {
+    background-color:rgba(255,255,255,0.9);
+    padding: 40px;
+    width: 85%;
+    margin: 0 auto;
+    @media #{$sp} {
+      padding: 20px 15px;
+      width: 100%;
+    }
+  }
+  &__tel {
+    color: #013F98;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+    @media #{$sp} {
+      padding-bottom: 20px;
+    }
+    .tel {
+      font-size: 26px;
+      color: #013F98;
+      padding-left: 25px;
+      @media #{$sp} {
+        font-size: 18px;
+        padding-left: 20px;
+      }
+      &::before {
+        width: 19px;
+        height: 24px;
+        background: url('../img/common/tel-b.svg') 50% / contain no-repeat;
+        @media #{$sp} {
+          width: 15px;
+          height: 20px;
+        }
+      } 
+    }
+  }
+  &__box {
+    background-color:rgba(255,255,255,0.37);
+    padding: 40px 45px 0;
+    @media #{$sp} {
+      padding: 15px;
+    }
+    &--txt {
+      font-size: 20px;
+      font-weight: bold;
+      width: calc(100% - 300px);
+      @media #{$sp} {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+    }
+    &--btn {
+      width: 300px;
+      @media #{$sp} {
+        width: 100%;
+      }
+    }
+  }
+}
