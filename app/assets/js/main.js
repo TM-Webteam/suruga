@@ -14,16 +14,16 @@ $(document).ready(function() {
   // Smooth Scrolling
   //---------------------------------
 
-  $('a[href^="#"]').click(function(){
+  // $('a[href^="#"]').click(function(){
 
-    var the_id = $(this).attr("href");
+  //   var the_id = $(this).attr("href");
 
-    $('html, body').animate({
-      scrollTop:$(the_id).offset().top-50
-    }, 'slow');
+  //   $('html, body').animate({
+  //     scrollTop:$(the_id).offset().top-50
+  //   }, 'slow');
 
-    return false;
-  });
+  //   return false;
+  // });
 
 });
 
@@ -140,43 +140,3 @@ $(document).ready(function(){
     $(this).next().slideToggle(400);
   });
 });
-
-
-//--------------------------------------
-//　バナー　追従
-//--------------------------------------
-
-// $(function(){
-//   var scrollStart = $('.show').offset().top;
-//   var scrollEnd = $('.hide').offset().top;
-//   var distance = 0;
-
-//   $(document).scroll(function(){
-//     distance = $(this).scrollTop();
-
-//     if (scrollStart <= distance) {
-//       $('.floating').addClass('fixed');
-//     } else if (scrollStart >= distance) {
-//       $('.floating').removeClass('fixed');
-//     }
-
-//     if (scrollEnd <= distance) {
-//       $('.floating').fadeOut();
-//     } else{
-//       $('.floating').fadeIn();
-//     }
-//   });      
-// });
-
-
-// $(window).on('load', function() {
-  
-//   AOS.init({
-//     offset: 120,　//初期値
-//     delay: 0,　//初期値
-//     anchor: 'top-bottom', //初期値
-//     duration: 800,　//初期値　400
-//     easing: 'ease',　//初期値
-//     once: true,　//初期値　false
-//   });
-// });

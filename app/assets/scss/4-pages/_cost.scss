@@ -1,0 +1,20 @@
+/*
+  ----------------
+  cost
+  ----------------
+*/
+
+.cost {
+
+  .hero-b {
+    background: url("../img/cost/bg-hero.webp") 50% / cover no-repeat;
+  }
+
+  .solution {
+    background-image: url("../img/common/deco-t.svg"), url("../img/common/deco-b.svg");
+    background-position: right top, left bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-color: #004098;
+  }
+  
+}

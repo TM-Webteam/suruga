@@ -5,7 +5,9 @@
 */
 
 .breadcrumb {
-  font-size: 12px;
+  font-size: 14px;
+  background: linear-gradient(to right, #034099, #011D45);
+  color: #fff;
   @media #{$sp} {
     font-size: 10px;
   }

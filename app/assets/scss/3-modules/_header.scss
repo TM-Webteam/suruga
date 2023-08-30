@@ -57,21 +57,6 @@ header {
         }
         .pc {
           background: url("../img/common/icon-pc.svg") 50% 30% no-repeat #0F218B;
-          span {
-            display: inline-block;
-            position: relative;
-            &::after {
-              content: "";
-              position: absolute;
-              top: 0;
-              bottom: 0;
-              right: 5px;
-              margin: auto;
-              width: 10px;
-              height: 10px;
-              background: url("../img/common/pull.svg") 50% / contain no-repeat;
-            }
-          }
         }
         &:not(:last-child) {
           border-right: 1px solid #fff;
@@ -79,66 +64,7 @@ header {
         &:first-child {
           margin-right: 10px;
         }
-        &.parent {
-          position: relative;
-          .pull {
-            background: #F3F3F3;
-            padding: 30px 20px;
-            visibility: hidden;
-            opacity: 0;
-            transition: all .3s;
-            position: absolute;
-            z-index: 3;
-            top: 95%;
-            right: 0;
-            width: 300px;
-            font-weight: bold;
-            &::before {
-              content: "";
-              position: absolute;
-              bottom: 100%;
-              right: 60px;
-              width: 0;
-              height: 0;
-              border-style: solid;
-              border-width: 0 5px 6px 5px;
-              border-color: transparent transparent #F3F3F3 transparent;
-            }
-            li {
-              position: relative;
-              padding-left: 1.5em;
-              &::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                margin: auto;
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 4px 0 4px 8px;
-                border-color: transparent transparent transparent #000;
-              }
-              &:not(:last-child) {
-                margin-bottom: 10px;
-              }
-              a {
-                &:hover {
-                  opacity: 1;
-                  color: #0f218b;
-                }
-              }
-            }
-          }
-          &:hover {
-            .pull {
-              visibility: visible;
-              opacity: 1;
-              box-shadow: 0 0 10px rgba(0,0,0,0.22);
-            }
-          }
-        }
+        
         .tel {
           font-size: 29px;
           padding-left: 25px;
@@ -465,6 +391,9 @@ header.open {
   height: 100%;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+  @media #{$h-pc} {
+    height: auto;
+  }
   #nav-toggle {
     position: relative;
     span:first-child {

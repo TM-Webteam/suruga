@@ -1,0 +1,216 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="product">
+
+  <section class="hero core">
+    <div class="containers flex aiC">
+      <div class="hero__box">
+        <div class="hero__box--sub">角度・傾斜測定に最適な「光センサ」</div>
+        <h1 class="ttl-primary-lower">レーザオートコリメータ<br class="sp-only">「Smart LAC」</h1>
+        <ul class="flex inherit jcC gap20 hero__box--list">
+          <li class="core">非接触で<br class="sp-only">測定</li>
+          <li class="core">作動距離<br>制限なし</li>
+          <li class="core">瞬時に<br class="sp-only">高精度</li>
+        </ul>
+        <div class="ctabtn">
+          <div class="balloon"><span class="balloon__txt">特長・概要が3分でわかる！</span></div>
+          <a href="/catalog/" class="more big bgY">製品資料ダウンロード</a>
+        </div>
+      </div>
+      <figure class="hero__img"><img src="/assets/img/top/img-hero.png" alt="" loading="lazy" decoding="async" width="482" height="482"></figure>
+    </div>
+  </section>
+
+  <section class="anc">
+    <div class="containers">
+      <ul class="flex jcC gap30 inherit anc__box">
+        <li><a href="#overview">製品概要</a></li>
+        <li><a href="#feature">特長</a></li>
+        <li><a href="#merit">導入メリット</a></li>
+        <li><a href="#series">製品シリーズ一覧</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="overview" class="overview partition-l">
+    <div class="containers">
+      <h2 class="ttl-secondary">精密さを求める部品や<br class="sp-only">デバイスの検査・角度測定に<br>レーザオートコリメータ<br class="sp-only">「Smart LAC」</h2>
+      <div class="flex sp-reverse">
+        <h3 class="overview__box">
+          <p>オートコリメータ「Smart LAC」は、レーザ光を使い対象物の微小な角度や複数の対象物の微小な角度関係を非接触でリアルタイムに測定できる計測機器です。</p>
+          <p>平行光を集光レンズに入射すると、その入射角度に応じて焦点面上の位置情報に変換されます。この原理を応用し、測定対象物へ平行レーザビームを照射し、その反射光をCMOS上に集光させることで、測定対象物の傾き量を測定します。</p>
+        </h3>
+        <figure class="overview__img"><img src="/assets/img/product/img-overview.jpg" alt="レーザオートコリメータ「Smart LAC」" loading="lazy" decoding="async" width="522" height="293"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="feature" class="about partition-r">
+    <div class="containers">
+      <h2 class="ttl-secondary">レーザオートコリメータ<br class="sp-only">「Smart LAC」の特長</h2>
+      <div class="lead">非接触レーザオートコリメータ方式採用し、１台のセンサでワークの傾きを高精度にリアルタイム測定</div>
+      <ul class="flex gap30 card">
+        <li class="card__box">
+          <h3 class="card__box--ttl">非接触で角度が測定できる</h3>
+          <figure class="card__box--img"><img src="/assets/img/top/img-about01.jpg" alt="非接触で角度が測定できる" loading="lazy" decoding="async" width="287" height="161"></figure>
+          <ul class="card__box--txt">
+            <li>測定物に損傷を与えない</li>
+            <li>センサ1台で傾きがわかるので、省空間・省価格・省エネ</li>
+          </ul>
+        </li>
+        <li class="card__box">
+          <h3 class="card__box--ttl">作動距離によらず測定できる</h3>
+          <figure class="card__box--img"><img src="/assets/img/top/img-about02.jpg" alt="作動距離によらず測定できる" loading="lazy" decoding="async" width="287" height="161"></figure>
+          <ul class="card__box--txt">
+            <li>繰り返し再現性0.0003度 （Ave.）<span>（5µrad）</span></li>
+            <li>作動距離によらず測定ができるので、レイアウト自由度が高い</li>
+          </ul>
+        </li>
+        <li class="card__box">
+          <h3 class="card__box--ttl">瞬時に測定できる</h3>
+          <figure class="card__box--img"><img src="/assets/img/top/img-about03.jpg" alt="瞬時に測定できる" loading="lazy" decoding="async" width="287" height="161"></figure>
+          <ul class="card__box--txt">
+            <li>高速・高精度もラインナップ<br>　高速測定　　　500kHz<br>　測定時間　2μs(500kHz)</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="merit" class="about partition-l">
+    <div class="containers">
+      <h2 class="ttl-secondary">レーザオートコリメータ<br class="sp-only">「Smart LAC」導入メリット</h2>
+      <div class="lead">導入することで、計測速度の向上やコスト削減などのメリットがあります。</div>
+      <ul class="flex gap30 card">
+        <li class="card__box">
+          <h3 class="card__box--ttl v2">計測精度向上</h3>
+          <figure class="card__box--img"><img src="/assets/img/product/img-about04.jpg" alt="計測精度向上" loading="lazy" decoding="async" width="287" height="161"></figure>
+          <div class="card__box--txt v2">測定物の微小な角度関係を非接触で測定できるため、測定物に損傷を与えず、瞬時に高精度な角度測定をすることが可能です。</div>
+        </li>
+        <li class="card__box">
+          <h3 class="card__box--ttl v2">コスト削減</h3>
+          <figure class="card__box--img"><img src="/assets/img/product/img-about05.jpg" alt="コスト削減" loading="lazy" decoding="async" width="287" height="161"></figure>
+          <div class="card__box--txt v2">角度等を測定する際に複数の装置を使う必要がないため、装置製作コストやスペースの削減・省エネにつながります。</div>
+        </li>
+        <li class="card__box">
+          <h3 class="card__box--ttl v2">UPH向上</h3>
+          <figure class="card__box--img"><img src="/assets/img/product/img-about06.jpg" alt="UPH向上" loading="lazy" decoding="async" width="287" height="161"></figure>
+          <div class="card__box--txt v2">測定物に損傷を与えず、瞬時に高精度な角度測定することができるため、測定時間を短縮でき、生産性の向上につながります。</div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="material">
+    <div class="containers">
+      <div class="flex aiC jcC gap20 desc">
+        <figure class="desc__img"><img src="/assets/img/common/img-wp.png" alt="レーザオートコリメータ「Smart LAC」" loading="lazy" decoding="async" width="325" height="230"></figure>
+        <summary class="desc__box">
+          <h3 class="desc__box--sub">製品の特長や価格が3分で分かる！</h3>
+          <h2 class="desc__box--ttl">レーザオートコリメータ「Smart LAC」</h2>
+          <a href="/whitepaper/" class="more bgY">製品資料をダウンロード</a>
+        </summary>
+      </div>
+    </div>
+  </section>
+
+  <section id="series" class="series partition-r">
+    <div class="containers">
+      <h2 class="ttl-secondary">「Smart LAC」シリーズ一覧</h2>
+      <div class="flex gap30 card">
+        <div class="card__wrap">
+          <figure class="card__wrap--img"><img src="/assets/img/common/img-series01.png" alt="シングルスポット測定" loading="lazy" decoding="async" width="346" height="195"></figure>
+          <summary class="card__box">
+            <h3 class="card__box--ttl">シングルスポット測定</h3>
+            <div class="card__box--txt">従来のH410マルチスポット測定タイプの機能を絞ることで”低価格”を実現</div>
+            <ul class="card__box--list">
+              <li>測定結果は一点のみの表示（複数反射光の中から選択）</li>
+              <li>レーザ波長ラインナップ　赤/赤外/緑/青</li>
+              <li>初期校正不要</li>
+              <li>KC/CE/FCC/FDA対応</li>
+            </ul>
+          </summary>
+        </div>
+        <div class="card__wrap">
+          <figure class="card__wrap--img"><img src="/assets/img/common/img-series02.png" alt="マルチスポット測定" loading="lazy" decoding="async" width="346" height="195"></figure>
+          <summary class="card__box">
+            <h3 class="card__box--ttl">マルチスポット測定</h3>
+            <div class="card__box--txt">手のひらサイズで高精度・高分解能を実現</div>
+            <ul class="card__box--list">
+              <li>最大５点まで測定可能</li>
+              <li>分岐アダプタを用いて複数面の角度測定が可能</li>
+              <li>測定レンジ:±1.75度</li>
+              <li>レーザ波長ラインナップ　赤/赤外/緑/青</li>
+              <li>初期校正不要</li>
+              <li>KC/CE/FCC/FDA対応</li>
+            </ul>
+          </summary>
+        </div>
+        <div class="card__wrap">
+          <figure class="card__wrap--img"><img src="/assets/img/common/img-series03.png" alt="高速/広角測定" loading="lazy" decoding="async" width="346" height="195"></figure>
+          <summary class="card__box">
+            <h3 class="card__box--ttl">高速/広角測定</h3>
+            <div class="card__box--txt">高速変化する対象物の傾きをダイナミック測定</div>
+            <ul class="card__box--list">
+              <li>高速サンプリング：200kHz, 250kHz, 500kHz（機種による）</li>
+              <li>高分解能：0.4sec（機種による）</li>
+              <li>ワイドレンジ：±５°（機種による）</li>
+              <li>アナログ電圧出力</li>
+            </ul>
+          </summary>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="breadcrumb">
+    <div class="containers">
+      <ul class="flex fS">
+        <li><a href="/">トップ</a></li>
+        <li>製品の特長</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="inquiry">
+    <div class="containers">
+      <div class="inquiry__wrap">
+        <h2 class="ttl-secondary non">レーザオートコリメータ<br class="sp-only">「Smart LAC」に関する<br>お問合せやご相談はお気軽に<br class="sp-only">ご連絡ください。</h2>
+        <a href="/contact/" class="more big bgY">お問合せ・ご相談</a>
+        <div class="flex jcC gap20 aiC inquiry__tel">
+          <a href="tel:0120789446" class="tel">0120-789-446</a>
+          <span>平日 9:00~18:00（土日祝は除く）</span>
+        </div>
+        <summary class="flex aiC inquiry__box">
+          <div class="inquiry__box--txt">製品資料やお役立ち資料を<br class="sp-only">ご希望の方はこちら</div>
+          <div class="flex gap10 inquiry__box--btn">
+            <a href="/catalog/" class="more tiny"><span>製品資料</span></a>
+            <a href="/whitepaper/" class="more tiny"><span>お役立ち資料</span></a>
+          </div>
+        </summary>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

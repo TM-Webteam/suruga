@@ -1,0 +1,98 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="strength">
+
+  <section class="hero-b">
+    <div class="containers core">
+      <div class="hero-b__box">
+        <h1 class="ttl-primary-lower">駿河精機が選ばれる理由</h1>
+        <div class="lead cW">駿河精機の製品は、バリエーションの豊富さ、<br class="sp-only">互換性の高さと確実短納期を実現することにより、<br>多くの企業様に選ばれています。</div>
+        <a href="/contact/" class="more big bgY">お問合せ・ご相談はこちら</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="symmetry">
+    <div class="containers">
+
+      <div class="flex aiC sp-reverse item">
+        <summary class="item__box">
+          <div class="item__box--num">01</div>
+          <h2 class="item__box--ttl">製品バリエーションの豊富さ</h2>
+          <div class="item__box--txt">駿河精機のレーザオートコリメータは、低価格高機能で汎用タイプのシングルスポット測定、マルチスポット測定だけでなく高速/広角測定タイプもご用意しております。<br>波長タイプも赤・緑・青・IR  4種類と豊富なバリエーションがあり、分岐アダプタ 等 周辺アイテムも充実しております。</div>
+        </summary>
+        <figure class="item__img"><img src="/assets/img/strength/img01.jpg" alt="製品バリエーションの豊富さ" loading="lazy" decoding="async" width="534" height="300"></figure>
+      </div>
+
+      <div class="flex aiC item">
+        <figure class="item__img"><img src="/assets/img/strength/img02.jpg" alt="製品の互換性" loading="lazy" decoding="async" width="534" height="300"></figure>
+        <summary class="item__box">
+          <div class="item__box--num">02</div>
+          <h2 class="item__box--ttl">製品の互換性</h2>
+          <div class="item__box--txt">駿河精機のレーザオートコリメータは、旧製品とのコマンドの互換性や、ヘッド取付穴共通化により周辺アイテムの継続使用が可能です。<br>故障時も修理対応しますので、ディスコンを気にせず長くお使いいただけます。</div>
+        </summary>
+      </div>
+
+      <div class="flex aiC sp-reverse item">
+        <summary class="item__box">
+          <div class="item__box--num">03</div>
+          <h2 class="item__box--ttl">テクノロジーと安定性</h2>
+          <div class="item__box--txt">駿河精機はステージ事業をはじめ、長年光学機器市場で培った確かなテクノロジーと、製品を確実短納期で安定的に提供することで多くの企業様に選ばれています。</div>
+        </summary>
+        <figure class="item__img"><img src="/assets/img/strength/img03.jpg" alt="テクノロジーと安定性" loading="lazy" decoding="async" width="534" height="300"></figure>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="breadcrumb">
+    <div class="containers">
+      <ul class="flex fS">
+        <li><a href="/">トップ</a></li>
+        <li>選ばれる理由</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="inquiry">
+    <div class="containers">
+      <div class="inquiry__wrap">
+        <h2 class="ttl-secondary non">レーザオートコリメータ<br class="sp-only">「Smart LAC」に関する<br>お問合せやご相談はお気軽に<br class="sp-only">ご連絡ください。</h2>
+        <a href="/contact/" class="more big bgY">お問合せ・ご相談</a>
+        <div class="flex jcC gap20 aiC inquiry__tel">
+          <a href="tel:0120789446" class="tel">0120-789-446</a>
+          <span>平日 9:00~18:00（土日祝は除く）</span>
+        </div>
+        <summary class="flex aiC inquiry__box">
+          <div class="inquiry__box--txt">製品資料やお役立ち資料を<br class="sp-only">ご希望の方はこちら</div>
+          <div class="flex gap10 inquiry__box--btn">
+            <a href="/catalog/" class="more tiny"><span>製品資料</span></a>
+            <a href="/whitepaper/" class="more tiny"><span>お役立ち資料</span></a>
+          </div>
+        </summary>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

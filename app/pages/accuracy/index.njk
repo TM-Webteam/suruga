@@ -1,0 +1,196 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="accuracy">
+
+  <section class="hero-b">
+    <div class="containers core">
+      <div class="hero-b__box">
+        <div class="hero-b__box--sub">より<ruby>精<rt>◆</rt>度<rt>◆</rt>の<rt>◆</rt>高<rt>◆</rt>い<rt>◆</rt>計<rt>◆</rt>測<rt>◆</rt></ruby>がしたい <small>企業様へ</small></div>
+        <h1 class="ttl-primary-lower">レーザオートコリメータ<br class="sp-only">「Smart LAC」が<br><small class="shine">非接触・高精度の測定</small>を<br class="sp-only">実現します。</h1>
+        <div class="ctabtn">
+          <div class="balloon"><span class="balloon__txt">特長・概要が3分でわかる！</span></div>
+          <a href="/catalog/" class="more big bgY">製品資料ダウンロード</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="anc-pickup">
+    <div class="containers">
+      <h2 class="ttl-secondary non">こんな企業様におすすめです。</h2>
+      <div class="flex gap30 card">
+        <a href="#pickup01" class="card__box">
+          <figure class="card__box--img"><img src="/assets/img/accuracy/img-pickup01.png" alt="変位センサ複数個を使用し、角度測定をしている" loading="lazy" decoding="async" width="347" height="195"></figure>
+          <ul class="card__box--list">
+            <li><h3>変位センサ複数個を使用し、角度測定をしている</h3></li>
+          </ul>
+        </a>
+        <a href="#pickup02" class="card__box">
+          <figure class="card__box--img"><img src="/assets/img/accuracy/img-pickup02.png" alt="ゲージ・ピックを使用し、角度を測定している" loading="lazy" decoding="async" width="347" height="195"></figure>
+          <ul class="card__box--list">
+            <li><h3>ゲージ・ピックを使用し、角度を測定している</h3></li>
+            <li><h3>ピンホール穴でレーザー反射を目視確認し、角度調整している</h3></li>
+          </ul>
+        </a>
+        <a href="#pickup03" class="card__box">
+          <figure class="card__box--img"><img src="/assets/img/accuracy/img-pickup03.png" alt="複数の対象物の角度を測定したい" loading="lazy" decoding="async" width="347" height="195"></figure>
+          <ul class="card__box--list">
+            <li><h3>対象物の角度を非接触で精度良く計測したい</h3></li>
+          </ul>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="solution">
+    <div class="containers">
+      <h2 class="ttl-secondary cW">レーザオートコリメータ<br class="sp-only">「Smart LAC」が解決します。</h2>
+      
+      <div id="pickup01" class="flex sp-reverse item">
+        <summary class="item__box">
+          <h3 class="item__box--ttl">Smart LAC1台で正確に測定</h3>
+          <div class="item__box--txt">これまで変位センサを３個使用し、３点間の高さの差から角度を計算していた場合、精度の面において課題がありました。<br>レーザーオートコリメータであれば、1台で正確に角度測定することが可能です。</div>
+        </summary>
+        <figure class="item__img">
+          <img src="/assets/img/accuracy/img-sol01.png" alt="Smart LAC1台で正確に測定" loading="lazy" decoding="async" width="514" height="343">
+        </figure>
+      </div>
+
+      <div id="pickup02" class="flex sp-reverse item">
+        <summary class="item__box">
+          <h3 class="item__box--ttl">高精度なデータ測定を実現</h3>
+          <div class="item__box--txt">ゲージ・ピックを使用して角度測定する場合、またピンホール穴でレーザー反射を確認して角度調整する場合、目視判定・手動調整するため精度の面において課題がありました。<br>レーザーオートコリメータであれば、角度を高精度にデータ測定することが可能です。</div>
+        </summary>
+        <figure class="item__img">
+          <img src="/assets/img/accuracy/img-sol02.png" alt="高精度なデータ測定を実現" loading="lazy" decoding="async" width="514" height="343">
+        </figure>
+      </div>
+
+      <div id="pickup03" class="flex sp-reverse item">
+        <summary class="item__box">
+          <h3 class="item__box--ttl">対象物に損傷を与えず高精度な測定</h3>
+          <div class="item__box--txt">レーザオートコリメータはレーザ光を使い、対象物の微小な角度や複数の対象物の微小な角度関係を非接触で測定できるため、対象物に損傷を与えず、高精度な角度測定をすることが可能です。</div>
+        </summary>
+        <figure class="item__img">
+          <img src="/assets/img/accuracy/img-sol03.png" alt="対象物に損傷を与えず高精度な測定" loading="lazy" decoding="async" width="514" height="343">
+        </figure>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="material">
+    <div class="containers">
+      <div class="flex aiC jcC gap20 desc">
+        <figure class="desc__img"><img src="/assets/img/common/img-wp.png" alt="レーザオートコリメータ「Smart LAC」" loading="lazy" decoding="async" width="325" height="230"></figure>
+        <summary class="desc__box">
+          <h3 class="desc__box--sub">製品の特長や概要が3分で分かる！</h3>
+          <h2 class="desc__box--ttl">レーザオートコリメータ「Smart LAC」</h2>
+          <a href="/whitepaper/" class="more bgY">製品資料をダウンロード</a>
+        </summary>
+      </div>
+    </div>
+  </section>
+
+  <section class="series partition">
+    <div class="containers">
+      <h2 class="ttl-secondary">「Smart LAC」シリーズ一覧</h2>
+      <div class="flex gap30 card">
+        <div class="card__wrap">
+          <figure class="card__wrap--img"><img src="/assets/img/common/img-series01.png" alt="シングルスポット測定" loading="lazy" decoding="async" width="346" height="195"></figure>
+          <summary class="card__box">
+            <h3 class="card__box--ttl">シングルスポット測定</h3>
+            <div class="card__box--txt">従来のH410マルチスポット測定タイプの機能を絞ることで”低価格”を実現</div>
+            <ul class="card__box--list">
+              <li>測定結果は一点のみの表示（複数反射光の中から選択）</li>
+              <li>レーザ波長ラインナップ　赤/赤外/緑/青</li>
+              <li>初期校正不要</li>
+              <li>KC/CE/FCC/FDA対応</li>
+            </ul>
+          </summary>
+        </div>
+        <div class="card__wrap">
+          <figure class="card__wrap--img"><img src="/assets/img/common/img-series02.png" alt="マルチスポット測定" loading="lazy" decoding="async" width="346" height="195"></figure>
+          <summary class="card__box">
+            <h3 class="card__box--ttl">マルチスポット測定</h3>
+            <div class="card__box--txt">手のひらサイズで高精度・高分解能を実現</div>
+            <ul class="card__box--list">
+              <li>最大５点まで測定可能</li>
+              <li>分岐アダプタを用いて複数面の角度測定が可能</li>
+              <li>測定レンジ:±1.75度</li>
+              <li>レーザ波長ラインナップ　赤/赤外/緑/青</li>
+              <li>初期校正不要</li>
+              <li>KC/CE/FCC/FDA対応</li>
+            </ul>
+          </summary>
+        </div>
+        <div class="card__wrap">
+          <figure class="card__wrap--img"><img src="/assets/img/common/img-series03.png" alt="高速/広角測定" loading="lazy" decoding="async" width="346" height="195"></figure>
+          <summary class="card__box">
+            <h3 class="card__box--ttl">高速/広角測定</h3>
+            <div class="card__box--txt">高速変化する対象物の傾きをダイナミック測定</div>
+            <ul class="card__box--list">
+              <li>高速サンプリング：200kHz, 250kHz, 500kHz（機種による）</li>
+              <li>高分解能：0.4sec（機種による）</li>
+              <li>ワイドレンジ：±５°（機種による）</li>
+              <li>アナログ電圧出力</li>
+            </ul>
+          </summary>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section class="breadcrumb">
+    <div class="containers">
+      <ul class="flex fS">
+        <li><a href="/">トップ</a></li>
+        <li>より精度の高い計測がしたい</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="inquiry">
+    <div class="containers">
+      <div class="inquiry__wrap">
+        <h2 class="ttl-secondary non">レーザオートコリメータ<br class="sp-only">「Smart LAC」に関する<br>お問合せやご相談はお気軽に<br class="sp-only">ご連絡ください。</h2>
+        <a href="/contact/" class="more big bgY">お問合せ・ご相談</a>
+        <div class="flex jcC gap20 aiC inquiry__tel">
+          <a href="tel:0120789446" class="tel">0120-789-446</a>
+          <span>平日 9:00~18:00（土日祝は除く）</span>
+        </div>
+        <summary class="flex aiC inquiry__box">
+          <div class="inquiry__box--txt">製品資料やお役立ち資料を<br class="sp-only">ご希望の方はこちら</div>
+          <div class="flex gap10 inquiry__box--btn">
+            <a href="/catalog/" class="more tiny"><span>製品資料</span></a>
+            <a href="/whitepaper/" class="more tiny"><span>お役立ち資料</span></a>
+          </div>
+        </summary>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

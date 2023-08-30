@@ -4,6 +4,99 @@
   ----------------
 */
 
+// よく読まれている記事
+.blogList {
+  margin-bottom: 40px;
+  @media #{$sp} {
+    margin-bottom: 20px;
+  }
+  .item {
+    padding: 20px 0;
+    border-bottom: 1px solid #DDDDDD;
+    @media #{$sp} {
+      padding: 10px 0;
+    }
+    &__img {
+      width: 30%;
+      img {
+        aspect-ratio: 3 / 2;
+        object-fit: cover;
+      }
+    }
+    &__ttl {
+      width: calc(100% - 30% - 20px);
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      font-size: 14px;
+    }
+  }
+}
+
+// サイドナビバナー
+.bnr-contact {
+  margin-bottom: 30px;
+  @media #{$sp} {
+    margin-bottom: 15px;
+  }
+}
+
+// 検索
+.search {
+  max-width: 500px;
+  margin: 0 auto 50px;
+  @media #{$sp} {
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+  &__form {
+    position: relative;
+  }
+  &__input[type=search] {
+    display: block;
+    width: 100%;
+    height: 55px;
+    padding: 5px 10px;
+    font-size: 16px;
+    background: #fff;
+    border: 1px solid #333333;
+    border-radius: 27px;
+    &::placeholder {
+      color: #777777;
+      text-align: center;
+      font-weight: 500;
+    }
+    @media #{$sp} {
+      height: 40px;
+    }
+  }
+  &__btn {
+    display: block;
+    width: 55px;
+    height: 55px;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    z-index: 3;
+    border-radius: 50%;
+    @media #{$sp} {
+      width: 35px;
+      height: 35px;
+      padding: 6px 7px;
+    }
+    img {
+      transition: all .3s;
+    }
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
 .sec-case {
   .containers-full {
     @media #{$sp} {
@@ -33,7 +126,7 @@
       }
       &--num {
         background: #025FAE;
-        color: #FFCC00;
+        color: #fff;
         font-size: 32px;
         font-weight: bold;
         width: 58px;
@@ -185,4 +278,483 @@
       }
     }
   }
+}
+
+// hero03 中央寄せ
+.hero-b {
+  // background: url("../img/cost/bg-hero.webp") 50% / cover no-repeat;
+  height: 490px;
+  @media #{$sp} {
+    height: auto;
+  }
+  &__box {
+    text-align: center;
+    &--sub {
+      display: inline-block;
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #fff;
+      margin-bottom: 25px;
+      @media #{$sp} {
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+      // 強調打点
+      ruby {
+        rt {
+          color: #FFCD00;
+          font-size: 10px;
+          @media #{$sp} {
+            font-size: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// hero03 中央寄せ
+.hero-m {
+  // background: url("../img/cost/bg-hero.webp") 50% / cover no-repeat;
+  height: 320px;
+  &.small {
+    height: 250px;
+    @media #{$sp} {
+      height: auto;
+    }
+    .ttl-primary-lower {
+      margin-bottom: 0;
+    }
+  }
+  @media #{$sp} {
+    height: auto;
+  }
+  .ttl-primary-lower {
+    margin-bottom: 30px;
+    @media #{$sp} {
+      margin-bottom: 15px;
+    }
+  }
+  &__box {
+    text-align: center;
+    &--lead {
+      color: #fff;
+      font-size: 20px;
+      @media #{$sp} {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+// アンカーリンク 3つ4つどちらも対応
+.anc {
+  &__box {
+    &.gap30 {
+      @media #{$sp} {
+        gap: 30px 15px;
+      }
+    }
+    li {
+      width: calc(100% / 4 - 30px);
+      font-size: 20px;
+      font-weight: bold;
+      @media #{$sp} {
+        width: calc(100% / 2 - 10px);
+        font-size: 14px;
+      }
+      a {
+        display: block;
+        color: #fff;
+        background: #025FAE;
+        text-align: center;
+        padding: 17px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.22);
+        border: 1px solid #025FAE;
+        position: relative;
+        @media #{$sp} {
+          padding: 10px;
+          border: 2px solid #025FAE;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -15px;
+          margin: auto;
+          width: 5px;
+          height: 5px;
+          border: 2px solid;
+          border-color:  transparent transparent #025FAE #025FAE;
+          transform: rotate(-45deg);
+          transition: all .3s;
+        }
+        &:hover {
+          opacity: 1;
+          color: #025FAE;
+          background: #fff;
+          &::before {
+            bottom: -20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.anc-pickup {
+  .gap30 {
+    @media #{$sp} {
+      gap: 40px;
+    }
+  }
+  .card {
+    margin-bottom: 60px;
+    @media #{$sp} {
+      margin-bottom: 30px;
+    }
+    &__box {
+      display: block;
+      background: #fff;
+      text-align: center;
+      width: calc(100% / 3 - 20px);
+      box-shadow: 0 0 10px rgba(0,0,0,0.16);
+      border-radius: 20px;
+      position: relative;
+      @media #{$sp} {
+        padding: 15px;
+        width: 100%;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -20px;
+        margin: auto;
+        width: 8px;
+        height: 8px;
+        border: 3px solid;
+        border-color:  transparent transparent #025FAE #025FAE;
+        transform: rotate(-45deg);
+        transition: all .3s;
+      }
+      &:hover {
+        opacity: 1;
+        color: #025FAE;
+        box-shadow: 0 0 10px rgba(0,0,0,0.4);
+        &::before {
+          bottom: -25px;
+        }
+      }
+      &--ttl {
+        padding: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        @media #{$sp} {
+          padding: 15px;
+          font-size: 16px;
+        }
+      }
+      &--list {
+        padding: 30px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: left;
+        @media #{$sp} {
+          padding: 15px;
+          font-size: 16px;
+        }
+        li {
+          padding-left: 1.5em;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 16px;
+            height: 14px;
+            background: url("../img/common/check-cube.svg") 50% / contain no-repeat;
+          }
+        }
+      }
+    }
+  }
+}
+
+.solution {
+  
+  .item {
+    border-radius: 20px;
+    background: url("../img/common/dot.svg") 15px 15px no-repeat #fff;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+      @media #{$sp} {
+        margin-bottom: 15px;
+      }
+    }
+    &__box {
+      width: 55%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 45px;
+      @media #{$sp} {
+        width: 100%;
+        padding: 15px;
+      }
+      &--ttl {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        @media #{$sp} {
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+    &__img {
+      width: 45%;
+      border-radius: 0 20px 20px 0;
+      overflow: hidden;
+      @media #{$sp} {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+      }
+      img {
+        object-fit: cover;
+        width: auto;
+        height: 100%;
+        @media #{$sp} {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+// ホワイトペーパー　※CMS対応
+.material {
+  background: url("../img/common/bg-material.webp") 100% 50% / contain no-repeat #000;
+  color: #fff;
+  @media #{$sp} {
+    background: url("../img/common/bg-material.webp") 50% / cover no-repeat;
+  }
+  .desc {
+    &__img {
+      text-align: center;
+      width: 40%;
+      @media #{$sp} {
+        width: 85%;
+        margin: 0 auto 15px;
+      }
+      img {
+        width: auto;
+        height: 230px;
+        @media #{$sp} {
+          height: 150px;
+        }
+      }
+    }
+    &__box {
+      width: 55%;
+      @media #{$sp} {
+        width: 100%;
+      }
+      &--sub {
+        font-size: 22px;
+        margin-bottom: 15px;
+        @media #{$sp} {
+          font-size: 16px;
+        }
+      }
+      &--ttl {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        @media #{$sp} {
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+      }
+      .more {
+        margin: 0;
+        max-width: 400px;
+        font-size: 16px;
+        @media #{$sp} {
+          margin: 0 auto;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.series {
+  .card {
+    &__wrap {
+      display: block;
+      width: calc(100% / 3 - 20px);
+      background: #fff;
+      border-radius: 20px;
+      position: relative;
+      @media #{$sp} {
+        width: 100%;
+        border-radius: 25px;
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+      &--img {
+        // border-radius: 20px 20px 0 0;
+      }
+    }
+    &__box {
+      padding: 30px;
+      @media #{$sp} {
+        padding: 15px;
+      }
+      &--ttl {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        display: inline-block;
+        color: #fff;
+        background: #004098;
+        width: 240px;
+        padding: 2px;
+        border-radius: 3px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -20px;
+        margin: auto;
+        @media #{$sp} {
+          font-size: 16px;
+        }
+      }
+      &--txt {
+        margin-bottom: 25px;
+        @media #{$sp} {
+          margin-bottom: 15px;
+        }
+      }
+      &--list {
+        font-size: 14px;
+        font-weight: bold;
+        @media #{$sp} {
+          font-size: 12px;
+        }
+        li {
+          padding-left: 1.5em;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 0;
+            width: 14px;
+            height: 14px;
+            background: url("../img/common/check-r.svg") 50% / contain no-repeat;
+          }
+          &:not(:last-child) {
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// サービス資料
+.catalog-menu {
+
+  .card {
+    box-shadow: 0 0 10px rgba(0,0,0,0.16);
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    @media #{$sp} {
+      padding: 15px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 40px;
+      @media #{$sp} {
+        margin-bottom: 20px;
+      }
+    }
+    &__img {
+      width: 30%;
+      text-align: center;
+      overflow: hidden;
+      @media #{$sp} {
+        width: 85%;
+        margin: 0 auto 15px;
+      }
+      img {
+        aspect-ratio: 3 / 2;
+        object-fit: contain;
+        transition: all .3s;
+      }
+    }
+    &__box {
+      width: calc(100% - 30% - 30px);
+      @media #{$sp} {
+        width: 100%;
+      }
+      &--ttl {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #025FAE;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        transition: all .3s;
+        @media #{$sp} {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+      }
+      &--txt {
+        margin-bottom: 20px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        transition: all .3s;
+        @media #{$sp} {
+          margin-bottom: 15px;
+        }
+      }
+      .more {
+        max-width: 360px;
+        margin: 0 auto;
+        font-size: 16px;
+        transition: all .3s;
+        @media #{$sp} {
+          width: 100%;
+          margin: 0 auto;
+          font-size: 14px;
+        }
+      }
+    }
+    &:hover {
+      opacity: 1;
+      box-shadow: 0 0 5px rgba(0,0,0,0.5);
+      .card__box--ttl {
+        color: #0F218B;
+      }
+      .more {
+        background: #fff;
+      }
+    }
+  }
+
 }

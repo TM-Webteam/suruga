@@ -5,6 +5,7 @@
 */
 
 .form {
+  
   &__note {
     margin-bottom: 60px;
     @media #{$sp} {
@@ -16,22 +17,28 @@
       }
     }
   }
+
+  &__wrap {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    overflow: hidden;
+  }
   form {
-    .container {
-      padding-right: 0;
-      padding-left: 0;
+    background: #fff;
+    padding: 40px 70px;
+    @media #{$sp} {
+      padding: 15px;
     }
   }
   &__ttl {
-    background: #14134C;
+    background: #0098D8;
     text-align: center;
     color: #fff;
     font-size: 20px;
     font-weight: bold;
     padding: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
     @media #{$sp} {
-      font-size: 16px;
+      font-size: 14px;
       padding: 10px;
     }
   }
@@ -43,7 +50,7 @@
     }
   }
   &__table {
-    background: #F6F6F6;
+    background: #fff;
     padding: 20px 70px 40px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     @media #{$sp} {
@@ -89,7 +96,7 @@
           padding: 0 5px;
           background: #FF0000;
           color: #fff;
-          border-radius: 3px;
+          border-radius: 20px;
         }
         .optional {
           background: #8D8D8D;
@@ -107,7 +114,7 @@
           padding: 5px 10px;
           border: 1px solid #BBBBBB;
           border-radius: 3px;
-          background: #fff;
+          background: #F8F8F8;
           height: 40px;
           margin: 0 10px;
           @media #{$sp} {
@@ -126,7 +133,7 @@
         }
         textarea {
           height: 190px;
-          background: #fff;
+          background: #F8F8F8;
           resize: vertical;
           @media #{$sp} {
             height: 100px;
@@ -136,7 +143,7 @@
           }
         }
         a {
-          color: #0090FF;
+          color: #1A0DAB;
           &:hover {
             opacity: 1;
             text-decoration: underline;
@@ -231,39 +238,11 @@
 }
 
 .side-form {
-  .form {
-    &__table {
+  form {
+    background: #fff;
+    padding: 20px;
+    @media #{$sp} {
       padding: 15px;
-      col {
-        &:first-child {
-          width: 100%;
-        }
-        &:last-child {
-          width: 100%;
-        }
-      }
-      tr {
-        th,td {
-          display: block;
-        }
-        th {
-          padding-right: 0;
-        }
-        td {
-          padding: 0 0 15px;
-          textarea,
-          input[type="text"],
-          input[type="email"],
-          input[type="url"],
-          input[type="tel"],
-          input[type="checkbox"] {
-            margin: 0;
-          }
-        }
-      }
-      .btn01.small {
-        width: 100%;
-      }
     }
   }
 }

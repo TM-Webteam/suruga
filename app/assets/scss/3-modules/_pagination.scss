@@ -17,12 +17,14 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     .page-numbers {
-      width: 38px;
-      height: 38px;
+      width: 40px;
+      height: 40px;
       text-align: center;
       font-size: 16px;
-      font-weight: 600;
+      border-radius: 50%;
+      background: #fff;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -35,7 +37,8 @@
       }
       &:hover {
         opacity: 1;
-        color: #223B80;
+        color: #fff;
+        background: #000;
       }
       &.prev {
         margin-right: 20px;
@@ -51,11 +54,9 @@
           top: 0;
           bottom: 0;
           margin: auto;
-          width: 6px;
-          height: 6px;
-          border: 2px solid;
-          border-color: transparent transparent #000 #000;
-          transform: rotate(45deg);
+          width: 16px;
+          height: 16px;
+          background: url("../img/common/prev.svg") 50% / contain no-repeat;
         }
       }
       &.next {
@@ -72,16 +73,14 @@
           top: 0;
           bottom: 0;
           margin: auto;
-          width: 6px;
-          height: 6px;
-          border: 2px solid;
-          border-color: #000 #000 transparent transparent;
-          transform: rotate(45deg);
+          width: 16px;
+          height: 16px;
+          background: url("../img/common/next.svg") 50% / contain no-repeat;
         }
       }
       &.current {
-        color: #223B80;
-        background-color:rgba(34,59,128,0.05);
+        color: #fff;
+        background: #000;
       }
     }
   }

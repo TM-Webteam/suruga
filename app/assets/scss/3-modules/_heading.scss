@@ -25,14 +25,23 @@
 	font-weight: 700;
 	color: #fff;
 	line-height: 1.5;
-  margin-bottom: 30px;
+  margin-bottom: 65px;
   text-align: center;
 	@media #{$sp} {
 		font-size: 22px;
-		margin-bottom: 15px;
+		margin-bottom: 40px;
 	}
   &.cB {
     color: #000;
+  }
+  small {
+    font-size: 34px;
+    @media #{$sp} {
+      font-size: 20px;
+    }
+  }
+  .shine {
+    text-shadow: 0 0 6px rgba(255,255,255,0.5);
   }
 }
 

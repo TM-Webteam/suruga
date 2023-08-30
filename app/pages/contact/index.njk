@@ -1,0 +1,205 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="contact bg-G">
+
+  <section class="hero-m core">
+    <div class="containers">
+      <div class="hero-m__box">
+        <h1 class="ttl-primary-lower">お問合せ・ご相談</h1>
+        <div class="hero-m__box--lead">駿河精機の製品に関するお問合せ・<br class="sp-only">ご相談はお気軽にご連絡ください。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="form">
+    <div class="containers">
+      <div class="form__note">
+        <p>● 以下フォームにご連絡先、お問合せ内容をご記入の上、送信してください。担当よりご連絡申し上げます。</p>
+      </div>
+      <div class="form__wrap">
+        <div class="form__ttl">お問合せ・ご相談フォーム</div>
+        <div id="aptoenqform">
+          <noscript>JavaScriptがオフです。オンにしてアクセスして頂くと、フォームが表示されます。</noscript>
+          <form name="apto_enquete_form" action="https://www.sotuu.net/php/enqform.php" method="POST" enctype="multipart/form-data" target="_apto_enq_frame">
+            <input type="hidden" name="id" value="surugaost">
+            <input type="hidden" name="i" value="d9bzcc.1692781537555">
+            <input type="hidden" name="no" value="159">
+            <input type="hidden" name="l" value="">
+            <input type="hidden" name="txtPos" value="0">
+            <input type="hidden" name="v" value="2">
+            <input type="hidden" name="move" value="　確認画面へ進む　">
+            <div class="aptoenq_necessary">
+              <span class="aptoenq_red">*</span>は必ずご記入ください。
+            </div>
+            <div class="aptoenq_question">
+              <div class="aptoenq_qa">
+                <div class="aptoenq_q aptoenq_l">
+                  <span class="aptoenq_red">*</span><span class="aptoenq_number">1. </span>会社名
+                </div>
+                <div class="aptoenq_a aptoenq_l">
+                  <input type="text" name="ans1" size="52" value="" style="max-width: 92%;">
+                </div>
+              </div>
+            </div>
+            <div class="aptoenq_question">
+              <div class="aptoenq_qa">
+                <div class="aptoenq_q aptoenq_l">
+                  <span class="aptoenq_red">*</span><span class="aptoenq_number">2. </span>部署名
+                </div>
+                <div class="aptoenq_a aptoenq_l">
+                  <input type="text" name="ans2" size="52" value="" style="max-width: 92%;">
+                </div>
+              </div>
+            </div>
+            <div class="aptoenq_question">
+              <div class="aptoenq_qa">
+                <div class="aptoenq_q aptoenq_l">
+                  <span class="aptoenq_number">3. </span>役職名
+                </div>
+                <div class="aptoenq_a aptoenq_l">
+                  <input type="text" name="ans3" size="52" value="" style="max-width: 92%;">
+                </div>
+              </div>
+            </div>
+            <div class="aptoenq_question">
+              <div class="aptoenq_qa">
+                <div class="aptoenq_q aptoenq_l">
+                  <span class="aptoenq_number">4. </span>ご担当者名
+                </div>
+                <div class="aptoenq_a aptoenq_l">
+                  <span class="aptoenq_red">*</span>姓 <input type="text" name="ans4" size="52" value="" style="max-width: 92%;"> <span class="aptoenq_red">*</span>名 <input type="text" name="ans5" size="52" value="" style="max-width: 92%;">
+                </div>
+              </div>
+            </div>
+            <div class="aptoenq_question"></div>
+            <div class="aptoenq_question">
+              <div class="aptoenq_qa">
+                <div class="aptoenq_q aptoenq_l">
+                  <span class="aptoenq_red">*</span><span class="aptoenq_number">6. </span>メールアドレス
+                </div>
+                <div class="aptoenq_a aptoenq_l">
+                  <input type="text" name="ans6" size="52" value="" style="max-width: 92%;">
+                </div>
+              </div>
+            </div>
+            <div class="aptoenq_question">
+              <div class="aptoenq_qa">
+                <div class="aptoenq_q aptoenq_l">
+                  <span class="aptoenq_red">*</span><span class="aptoenq_number">7. </span>電話番号　※ハイフン不要
+                </div>
+                <div class="aptoenq_a aptoenq_l">
+                  <input type="text" name="ans7" size="52" value="" style="max-width: 92%;">
+                </div>
+              </div>
+              </div>
+            <div class="aptoenq_question">
+              <div class="aptoenq_qa">
+                <div class="aptoenq_q aptoenq_l">
+                  <span class="aptoenq_red">*</span><span class="aptoenq_number">8. </span>お問合せ内容詳細
+                </div>
+                <div class="aptoenq_a aptoenq_l">
+                  <textarea name="ans8" cols="52" rows="8"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="aptoenq_question">
+              <div class="aptoenq_qa">
+                <div class="aptoenq_q aptoenq_l">
+                  <span class="aptoenq_red">*</span><span class="aptoenq_number">9. </span>個人情報の取り扱いについて
+                </div>
+                <div class="aptoenq_a aptoenq_l">
+                  <label><span class="aptoenq_check"><input type="checkbox" name="ans9[]" value="個人情報の取り扱いに同意する"></span><span>個人情報の取り扱いに同意する</span></label>
+                  <div class="aptoenq_br"></div>
+                </div>
+              </div>
+            </div>
+            <div class="aptoenq_question">
+              <div class="aptoenq_cusinfo">
+                <div class="aptoenq_cusinfo_subj">お客様情報</div>
+                <div class="aptoenq_cusinfo_warn"></div>
+                <div class="aptoenq_cusinfo_fm"></div>
+                <div class="aptoenq_br"></div>   <div class="aptoenq_cusinfo_item aptoenq_cusinfo_item_email aptoenq_h160"><span class="aptoenq_red">*</span>メールアドレス</div>
+                <div class="aptoenq_cusinfo_fm aptoenq_cusinfo_fm_email"><input type="text" name="txtEmail" size="40" maxlength="128" value=""></div>
+                <div class="aptoenq_br"></div>
+                <div class="aptoenq_cusinfo_item aptoenq_cusinfo_item_kaisha aptoenq_h160"><span class="aptoenq_red">*</span>会社名</div>
+                <div class="aptoenq_cusinfo_fm aptoenq_cusinfo_fm_kaisha"><input type="text" name="txtKaisha" size="40" maxlength="50" value=""></div>
+                <div class="aptoenq_br"></div>
+                <div class="aptoenq_cusinfo_item aptoenq_cusinfo_item_busho aptoenq_h160">部署名</div>
+                <div class="aptoenq_cusinfo_fm aptoenq_cusinfo_fm_busho"><input type="text" name="txtBusho" size="40" maxlength="50" value=""></div>
+                <div class="aptoenq_br"></div>
+                <div class="aptoenq_cusinfo_item aptoenq_cusinfo_item_yakushoku aptoenq_h160">役職</div>
+                <div class="aptoenq_cusinfo_fm aptoenq_cusinfo_fm_yakushoku"><input type="text" name="txtYakushoku" size="40" maxlength="50" value=""></div>
+                <div class="aptoenq_br"></div>
+                <div class="aptoenq_cusinfo_item aptoenq_cusinfo_item_name aptoenq_h160"><span class="aptoenq_red">*</span>御名前</div>
+                <div class="aptoenq_cusinfo_fm aptoenq_cusinfo_fm_name"><input type="text" name="txtNamae" size="15" maxlength="96" value=""><span class="aptoenq_cusinfo_msg" id="dscr_seimeispace">※姓名間には空白をお願いします。</span></div>
+                <div class="aptoenq_br"></div>
+                <div class="aptoenq_cusinfo_item aptoenq_cusinfo_item_yuubin aptoenq_h160"><span class="aptoenq_red">*</span>〒</div>
+                <div class="aptoenq_cusinfo_fm aptoenq_cusinfo_fm_yuubin"><input type="text" name="txtZipcode" size="10" maxlength="8" value=""><span class="aptoenq_cusinfo_msg">※郵便番号から住所自動入力</span></div>
+                <div class="aptoenq_br"></div>
+                <div class="aptoenq_cusinfo_item aptoenq_cusinfo_item_juusho aptoenq_h160"><span class="aptoenq_red">*</span>住所</div>
+                <div class="aptoenq_cusinfo_fm aptoenq_cusinfo_fm_juusho"><input type="text" name="txtJuusho" size="40" maxlength="256" value=""></div>
+                <div class="aptoenq_br"></div>
+                <div class="aptoenq_cusinfo_item aptoenq_cusinfo_item_tel aptoenq_h160"><span class="aptoenq_red">*</span>電話番号</div>
+                <div class="aptoenq_cusinfo_fm aptoenq_cusinfo_fm_tel"><input type="text" name="txtTEL" size="40" maxlength="20" value=""><span class="aptoenq_cusinfo_msg">※"-"で区切ってください。</span></div>
+                <div class="aptoenq_br"></div>
+                <div class="aptoenq_cusinfo_item aptoenq_cusinfo_item_fax aptoenq_h160">FAX番号</div>
+                <div class="aptoenq_cusinfo_fm aptoenq_cusinfo_fm_fax"><input type="text" name="txtFAX" size="40" maxlength="20" value=""><span class="aptoenq_cusinfo_msg">※"-"で区切ってください。</span></div>
+                <div class="aptoenq_br"></div>
+                <div class="aptoenq_cusinfo_exp">　上記項目にご記入頂き、「確認画面へ進む」ボタンを一回だけクリックしてください。<br>
+                  <input name="chkMemorize" type="checkbox" checked="">
+                  次回、お客様情報を入力しないで済むよう、暗号化してクッキーに記憶する。
+                </div>
+                <div class="aptoenq_br"></div>
+              </div>
+              <div class="aptoenq_c">
+                <div class="aptoenq_cusinfo_exp">
+                  <input type="hidden" name="move" value="　確認画面へ進む　">
+                  <input type="hidden" name="seimeicheck" value="t">
+                  <input type="hidden" name="todofukencheck" value="t">
+                  <input type="hidden" name="sss" value="378b896455ce9b0a61cbb1923bcfabbf">
+                  <input type="hidden" name="s" value="1692781598">
+                  <div class="aptoenq_bt_set">
+                    <div class="aptoenq_bt_send"><button type="submit">　確認画面へ進む　</button></div>
+                    <div class="aptoenq_bt_back"><button type="button" id="aptoenq_reset">リセット</button></div>
+                  </div>
+                </div>
+                <div class="aptoenq_br"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="breadcrumb">
+    <div class="containers">
+      <ul class="flex fS">
+        <li><a href="/">トップ</a></li>
+        <li>お問合せ・ご相談</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

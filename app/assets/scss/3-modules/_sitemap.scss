@@ -6,8 +6,19 @@
 
 .sitemap {
 
+  .hero-m {
+    background: url("../img/sitemap/bg-hero.webp") 50% / cover no-repeat;
+  }
+
+  .gap60 {
+    gap: 70px 12%;
+    @media #{$sp} {
+      gap: 15px;
+    }
+  }
+
   .group {
-    width: calc(100% / 3 - 40px);
+    // width: calc(100% / 4);
     @media #{$sp} {
       width: 100%;
     }
@@ -15,13 +26,10 @@
       font-size: 20px;
       font-weight: bold;
       line-height: 1.5;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #000;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       @media #{$sp} {
         font-size: 16px;
-        padding-bottom: 5px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
       }
     }
     &__list {
@@ -32,6 +40,20 @@
           &:hover {
             opacity: 1;
             text-decoration: underline;
+          }
+          &.blank {
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: -1.5em;
+              margin: auto;
+              width: 12px;
+              height: 12px;
+              background: url("../img/common/blank.svg") 50% / contain no-repeat;
+            }
           }
         }
         &:not(:last-child) {

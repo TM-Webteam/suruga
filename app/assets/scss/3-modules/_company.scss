@@ -6,49 +6,61 @@
 
 .company {
   
-  .hero03 {
-    height: 250px;
+  .hero-m {
     background: url("../img/company/bg-hero.webp") 50% / cover no-repeat;
-    @media #{$sp} {
-      height: auto;
-    }
-    &__box {
-      width: 100%;
-      .ttl-primary-lower {
-        margin-bottom: 0;
-      }
-    }
+  }
+
+  .intro {
+    background: url("../img/company/bg-intro.webp") 50% / cover no-repeat;
+    text-align: center;
   }
 
   .history {
     
     &__desc {
+      border: 1px solid #DDDDDD;
       dt,dd {
-        padding: 10px 30px;
+        padding: 15px 30px;
         border-bottom: 1px solid #DDDDDD;
         @media #{$sp} {
           padding: 5px 15px;
         }
       }
       dt {
-        width: 21%;
-        font-weight: 500;
+        width: 23%;
+        font-size: 20px;
+        font-weight: 700;
+        border-right: 1px solid #ddd;
+        background: #F3F4F9;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         @media #{$sp} {
           width: 100%;
+          font-size: 16px;
+          border-right: 0;
         }
-        &:first-child {
-          border-top: 1px solid #333333; 
+        &:last-of-type {
+          border-bottom: 0;
         }
       }
       dd {
-        width: calc(100% - 21%);
+        width: calc(100% - 23%);
+        line-height: 2;
         @media #{$sp} {
           width: 100%;
         }
-        &:first-of-type {
-          border-top: 1px solid #333333; 
-          @media #{$sp} {
-            border-top: 0;
+        &:last-of-type {
+          border-bottom: 0;
+        }
+        a {
+          color: #1A0DAB;
+          text-decoration: underline;
+          &:hover {
+            opacity: 1;
+            text-decoration: none;
           }
         }
       }

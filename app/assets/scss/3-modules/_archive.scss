@@ -6,7 +6,7 @@
 
 // 最新の2件のみ表示
 .latest {
-  background: #0D5BAB;
+  background: url("../img/column/bg-latest.webp") 50% 0 / contain no-repeat #153159;
   // .containers {
   //   padding: 70px 30px 0;
   //   @media #{$sp} {
@@ -19,6 +19,7 @@
     background: #F2F6FB;
     width: calc(100% / 2 - 20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 20px;
     position: relative;
     @media #{$sp} {
       width: 100%;
@@ -27,7 +28,10 @@
     &:hover {
       opacity: 1;
       box-shadow: 0 0 10px rgba(59,72,111,0.8);
-      background: #DFEDFF;
+      .item__ttl {
+        color: #0f218b;
+        text-decoration: underline;
+      }
     }
     
     &:not(:last-child) {
@@ -39,7 +43,7 @@
       width: 100%;
       font-size: 20px;
       font-weight: bold;
-      margin-bottom: 15px;
+      margin-bottom: 30px;
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
@@ -152,8 +156,19 @@
 // ニュース一覧
 .arc-news {
 
+  .main-conts {
+    background: #fff;
+    padding: 40px;
+    @media #{$sp} {
+      padding: 15px;
+    }
+  }
   .containers {
-    max-width: 880px;
+    // max-width: 880px;
+  }
+  .ttl-secondary {
+    text-align: left;
+    margin-bottom: 10px;
   }
   .item {
     
@@ -168,6 +183,12 @@
         margin-bottom: 15px;
         @media #{$sp} {
           margin-bottom: 10px;
+        }
+        .cat {
+          background: #fff;
+          border: 1px solid #000;
+          border-radius: 5px;
+          color: #000;
         }
       }
       &--ttl {
