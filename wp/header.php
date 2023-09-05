@@ -23,6 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="https://www.sotuu.net/js-common/download.js" async></script>
 
 <!-- Style sheet -->
+<link rel="stylesheet" href="<?php echo assets_path() ?>css/apt.css">
 <link rel="stylesheet" href="<?php echo assets_path() ?>css/main.css">
 <?php wp_head(); ?>
 </head>
@@ -41,7 +42,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="in__logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>optical-sensor/"><img src="<?php echo assets_path() ?>img/common/logo.svg" alt="駿河精機株式会社" loading="lazy" decoding="async" width="145" height="56"></a></div>
       <nav class="in__nav hpc-only">
         <ul class="flex jcE aiC">
-          <li class="core"><a href="tel:0120789446" class="tel">0120-789-446</a>　月～土 8:00～20:00（日祝日は除く）</li>
+          <li class="core"><a href="tel:0120789446" class="tel">0120-789-446</a><!-- 　月～土 8:00～20:00（日祝日は除く） --></li>
           <li class="in__nav--list"><a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/" class="doc">製品資料</a></li>
           <li class="in__nav--list"><a href="<?php echo esc_url( home_url( '/' ) ); ?>estimate/" class="estimate">お見積</a></li>
           <li class="in__nav--list"><a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/" class="mail">お問合せ・ご相談</a></li>
@@ -97,7 +98,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>company/">会社情報</a></li>
     </ul>
     <ul class="aside">
-      <li><a href="tel:0120789446" class="tel">0120-789-446</a><br>月～土 8:00～20:00（日祝日は除く）</li>
+      <li><a href="tel:0120789446" class="tel">0120-789-446</a><!-- <br>月～土 8:00～20:00（日祝日は除く） --></li>
       <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/" class="more small doc">製品資料</a></li>
       <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>estimate/" class="more small estimate">お見積</a></li>
       <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/" class="more small mail">お問合せ・ご相談</a></li>

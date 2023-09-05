@@ -5,7 +5,7 @@
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/" class="more big bgY">お問合せ・ご相談</a>
       <div class="flex jcC gap20 aiC inquiry__tel">
         <a href="tel:0120789446" class="tel">0120-789-446</a>
-        <span>月～土 8:00～20:00（日祝日は除く）</span>
+        <!-- <span>月～土 8:00～20:00（日祝日は除く）</span> -->
       </div>
       <summary class="flex aiC inquiry__box">
         <div class="inquiry__box--txt">製品資料やお役立ち資料を<br class="sp-only">ご希望の方はこちら</div>
